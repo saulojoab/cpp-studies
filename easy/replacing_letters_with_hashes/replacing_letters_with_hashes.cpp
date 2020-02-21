@@ -20,9 +20,6 @@ string replace(string text, string interval) {
         }
     }
 
-    cout << initial << endl;
-    cout << final << endl;
-
     for (int e = 0; e < text.length(); e++) 
     {
         for (int i = initial; i <= final; i++)
@@ -32,7 +29,7 @@ string replace(string text, string interval) {
                 result = result + "#";
                 break;
             } 
-            
+
             if (i == final) {
                 result = result + text[e];
             }
